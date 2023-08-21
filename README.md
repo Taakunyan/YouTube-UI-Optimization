@@ -14,4 +14,4 @@ YouTube の画面を高解像度ディスプレイに最適化する Google Chro
 - 動画タイトルが Description & Comment タブに入っている。
 
 ## ChangeLog
-0.3.0a [2023/08/21]
+0.3.0-Alpha [2023/08/21]
