@@ -11,7 +11,7 @@ YouTube の画面を高解像度ディスプレイに最適化する Google Chro
 
 ## 既知の問題
 - ブラウザの幅が 1000px 以下の時にタブが表示されない。
-- タイトルが Description & Comment タブに入っている。
+- 動画タイトルが Description & Comment タブに入っている。
 
 ## ChangeLog
 0.3.0 [2023/08/21]
