@@ -1,7 +1,7 @@
 {
     "manifest_version":3,
     "name":"YouTube-UI-Optimization",
-    "version":"1.0.0",
+    "version":"0.3.1",
     "description":"Optimize YouTube UI for high resolution displays.",
     "content_scripts":[{
         "matches":["https://www.youtube.com/watch*"],
