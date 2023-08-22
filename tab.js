@@ -18,8 +18,8 @@ function injectTab(element, insertPosition) {
     element.insertAdjacentHTML(insertPosition, tabHTML);
 }
 
-function moveElement(parent, child, to) {
-    document.getElementById(to).appendChild(document.getElementById(parent).removeChild(document.getElementById(child)));
+function moveElement(from, to) {
+    document.getElementById(to).appendChild(document.getElementById(from));
 }
 
 function removeAllIds(element){
@@ -30,9 +30,9 @@ function removeAllIds(element){
 }
 
 function exec() {
-    injectTab(document.getElementById('secondary'), 'afterbegin');
-    moveElement('secondary', 'secondary-inner', 'tabPage1');
-    moveElement('primary-inner', 'below', 'tabPage2');
+    injectTab(document.querySelector('#secondary.style-scope.ytd-watch-flexy'), 'afterbegin');
+    moveElement('secondary-inner', 'tabPage1');
+    moveElement('below', 'tabPage2');
 }
 
 function waitLoad() {

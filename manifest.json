@@ -3,6 +3,11 @@
     "name":"YouTube-UI-Optimization",
     "version":"0.3.0",
     "description":"Optimize YouTube UI for high resolution displays.",
+    "permissions":["webNavigation","scripting"],
+    "host_permissions":["https://www.youtube.com/watch*"],
+    "background":{
+        "service_worker":"background.js"
+    },
     "content_scripts":[{
         "matches":["https://www.youtube.com/watch*"],
         "css":["style.css","tab.css"],
