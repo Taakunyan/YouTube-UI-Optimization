@@ -22,16 +22,10 @@ function moveElement(from, to) {
     document.getElementById(to).appendChild(document.getElementById(from));
 }
 
-function removeAllIds(element){
-    if(element instanceof HTMLElement){
-        element.removeAttribute('id');
-        for(const child of element.children)removeAllIds(child);
-    }
-}
-
 function exec() {
     injectTab(document.querySelector('#secondary.style-scope.ytd-watch-flexy'), 'afterbegin');
     moveElement('secondary-inner', 'tabPage1');
+    if(document.getElementById('chat-container'))moveElement('chat-container', 'tabPage2');
     moveElement('below', 'tabPage2');
 }
 
